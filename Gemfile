@@ -28,11 +28,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'devise_token_auth', '>= 1.2.0', git: "https://github.com/lynndylanhurley/devise_token_auth"
 
 group :development, :test do
-
-  gem "pry-rails"
-  
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "pry-rails"
+  gem "faker", :git => "https://github.com/stympy/faker.git", :branch => "master"
 end
 
 group :development do
