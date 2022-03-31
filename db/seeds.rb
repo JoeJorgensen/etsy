@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-<<<<<<< HEAD
-=======
 Seller.destroy_all
 Buyer.destroy_all
 Product.destroy_all
@@ -40,5 +38,4 @@ Buyer.create(name:'Joe', max_price:10000, desired_categories: desired_categories
 Buyer.create(name:'Katherine', max_price:7000, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s2.id)
 
 
->>>>>>> 77bc77d86ae2f8c1e961d783a89e6cddff9da508
 
