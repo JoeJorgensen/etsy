@@ -47,7 +47,7 @@ const renderRows = (products) => {
       return (
         <ListGroup.Item key ={seller.id}>
             <div >
-            <h1>Seller: {seller.name}</h1>
+            <h1>{seller.name}</h1>
             <p>Email: {seller.email}</p>
             </div>
           <Table striped bordered hover>
