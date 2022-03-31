@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :sellers
     resources :products
+    # get '/products', to: 'products#index'
     resources :buyers
   end
 
