@@ -1,4 +1,6 @@
-# Starter Project
+# etsy
+# trello link
+(https://trello.com/b/5IuewsTS/etsy-board)
 
 1. Using rails 6.1.4.7 and ruby 3.0.2
 
