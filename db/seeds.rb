@@ -8,7 +8,9 @@
 
 <<<<<<< HEAD
 =======
-User.destroy_all
+Seller.destroy_all
+Buyer.destroy_all
+Product.destroy_all
 
 
 u1 = User.create(email:'test1@test.com', password:123456)
