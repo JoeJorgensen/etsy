@@ -5,7 +5,8 @@ const Feed = ()=>{
     return (
         <Card>
         <div>
-            <h1>Thanks for signing up! Welcome to your feed!</h1>
+            <h1>Products</h1>
+
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus in metus vulputate eu scelerisque felis. Et netus et malesuada fames ac turpis egestas integer eget. Nam at lectus urna duis convallis. Vehicula ipsum a arcu cursus vitae congue. Risus in hendrerit gravida rutrum quisque non tellus orci. Mi tempus imperdiet nulla malesuada pellentesque. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Cursus in hac habitasse platea. Morbi tristique senectus et netus et malesuada. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Quis imperdiet massa tincidunt nunc pulvinar. Hac habitasse platea dictumst quisque sagittis purus sit amet. Praesent elementum facilisis leo vel fringilla.
 
@@ -19,6 +20,7 @@ Sit amet purus gravida quis blandit turpis. Nunc sed id semper risus in. Ultrici
 </p>
 
         </div>
+        
         </Card>
     )
 } 
