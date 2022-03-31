@@ -23,7 +23,7 @@ const getProducts = async()=>{
         <Card>
         <div>
             <h1>Products</h1>
-            <p>{JSON.stringify(getProducts)}</p>
+            <p>{JSON.stringify(products)}</p>
             
            
         </div>
