@@ -21,15 +21,15 @@ desired_categories = [
   'wedding',
 ]
 
-s1 = Seller.create(name:'Sarah', email:'Sarah@test.com' )
-s2 = Seller.create(name:'Bryan', email:'Bryan@test.com' )
+s1 = Seller.create(name:'Art by Sarah', email:'Sarah@test.com' )
+s2 = Seller.create(name:'Party Products', email:'PartyProduct@test.com' )
 
-p1 = Product.create(price:10000, description:'painting', category: 'artwork',seller_id:s1.id )
+p1 = Product.create(price:1000, description:'painting', category: 'artwork',seller_id:s1.id )
 p2 = Product.create(price:50, description:'prints', category: 'artwork',seller_id:s1.id )
 p3 = Product.create(price:10, description:'invitations', category: 'birthday',seller_id:s2.id )
-p3 = Product.create(price:10, description:'banners', category: 'birthday',seller_id:s2.id )
-p3 = Product.create(price:10, description:'decor', category: 'birthday',seller_id:s2.id )
-p3 = Product.create(price:10, description:'decor', category: 'wedding',seller_id:s2.id )
+p3 = Product.create(price:15, description:'banners', category: 'birthday',seller_id:s2.id )
+p3 = Product.create(price:10, description:'balloons', category: 'birthday',seller_id:s2.id )
+p3 = Product.create(price:10, description:'table signs', category: 'wedding',seller_id:s2.id )
 
 num_desired_categories = 2
 

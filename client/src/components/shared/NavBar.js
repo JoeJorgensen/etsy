@@ -26,7 +26,7 @@ const NavBar = ()=>{
 
 
             {/* <Badge style={{color: 'white'}} >Feed</Badge> */}
-            <Badge><Link to ='/feed' style={{color: 'white'}}>Feed </Link></Badge>
+            <Badge><Link to ='/feed' style={{color: 'white'}}>Products </Link></Badge>
 
               </>  
               )
