@@ -30,14 +30,14 @@ s3 = Seller.create(name:'Karl', email: 'JewelryByKarl@test.com')
 s4 = Seller.create(name:'Anna', email: 'ClothingByAnna@test.com')
 
 
- Product.create(price:10000, description:'painting', category: 'Artwork',seller_id:s1.id )
- Product.create(price:50, description:'prints', category: 'Artwork',seller_id:s1.id )
- Product.create(price:15, description:'invitations', category: 'Birthday',seller_id:s1.id )
+ Product.create(price:10000, description:'Painting', category: 'Artwork',seller_id:s1.id )
+ Product.create(price:50, description:'Prints', category: 'Artwork',seller_id:s1.id )
+ Product.create(price:15, description:'Invitations', category: 'Birthday',seller_id:s1.id )
 
 
- Product.create(price:50, description:'banners', category: 'Birthday',seller_id:s2.id )
- Product.create(price:5, description:'decor', category: 'Birthday',seller_id:s2.id )
- Product.create(price:8, description:'decor', category: 'Wedding',seller_id:s2.id )
+ Product.create(price:50, description:'Banners', category: 'Birthday',seller_id:s2.id )
+ Product.create(price:5, description:'Decor', category: 'Birthday',seller_id:s2.id )
+ Product.create(price:8, description:'Decor', category: 'Wedding',seller_id:s2.id )
 
  Product.create(price:150, description:'Watch', category: 'Jewlery',seller_id:s3.id )
  Product.create(price:60, description:'Chain', category: 'Jewlery',seller_id:s3.id )
