@@ -48,7 +48,7 @@ const renderRows = (products) => {
         <ListGroup.Item key ={seller.id}>
             <div >
             <h1>{seller.name}</h1>
-            <p>{seller.email}</p>
+            <p>Email: {seller.email}</p>
             </div>
           <Table striped bordered hover>
             <thead>
@@ -82,8 +82,13 @@ const getProducts = async()=>{
     }
 }
 return (
+<<<<<<< HEAD
     <Container style ={{textAlign:'center'}}>
       <Badge bg='dark' style={{margin:'20px'}}><h1 >Products</h1></Badge>
+=======
+    <Container>
+      <h1>Available Products</h1>
+>>>>>>> c793dd824cbe36c35f5b3e28d978cc8a7c298048
       <ListGroup>{renderData()}</ListGroup>
     </Container>
   );
