@@ -16,9 +16,9 @@ u2 = User.create(email:'test2@test.com', password:123456)
 
 # a hard coded array of strings(categories)
 desired_categories = [
-  'artwork',
-  'birthday',
-  'wedding',
+  'Artwork',
+  'Birthday',
+  'Wedding',
   'Jewlery',
   'Clothing',
   'Accessory',
