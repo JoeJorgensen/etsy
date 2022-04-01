@@ -48,7 +48,7 @@ const renderRows = (products) => {
           <Card>
         <ListGroup.Item key ={seller.id}    >
             <div >
-            <Badge bg='dark'><h1 style={{paddingTop:'5px'}}>Seller: {seller.name}</h1></Badge>
+            <Badge bg='dark'><h1 style={{paddingTop:'5px'}}>{seller.name}</h1></Badge>
             <br/>
             <br/>
 
@@ -93,7 +93,7 @@ const getProducts = async()=>{
 }
 return (
     <Container style ={{textAlign:'center'}}>
-      <Badge bg='dark' style={{margin:'20px'}}><h1 >Products</h1></Badge>
+      <Badge bg='dark' style={{margin:'20px'}}><h1 >Products by Sellers:</h1></Badge>
       <ListGroup>{renderData()}</ListGroup>
     </Container>
   );
