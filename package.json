@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "axios-hooks": "^3.0.1"
+  }
+}
