@@ -48,7 +48,7 @@ const renderRows = (products) => {
           <Card>
         <ListGroup.Item key ={seller.id}    >
             <div >
-            <Badge bg='dark'><h1 style={{paddingTop:'5px'}}>{seller.name}</h1></Badge>
+            <Badge bg='dark'><h1 style={{paddingTop:'5px'}}>Seller: {seller.name}</h1></Badge>
             <br/>
             <br/>
 
