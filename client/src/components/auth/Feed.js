@@ -46,13 +46,24 @@ const renderRows = (products) => {
 
       return (
           <Card>
-        <ListGroup.Item key ={seller.id}>
+        <ListGroup.Item key ={seller.id}    >
             <div >
-            <Badge bg='dark' ><h1>{seller.name}</h1></Badge>
+            <Badge bg='dark'><h1>{seller.name}</h1></Badge>
             <br/>
             <br/>
 
-            <Badge><h6>Email: {seller.email}</h6></Badge>
+            <Badge bg= 'info'  
+        
+                style={{ 
+                    display: 'inline-flex !important',
+                    justifyContent: 'center',
+                    alignItems: 'center'  }}  
+                    >
+             <h6 style={{ 
+                    display: 'inline-flex !important',
+                    justifyContent: 'center',
+                    alignItems: 'center'  }}>{seller.email}</h6>
+           </Badge>
             <br/>
 
             </div>
