@@ -17,7 +17,7 @@ const Categories = ()=>{
 
     const getUniqueCategories = ()=>{ 
         return products.reduce((acumm, d) =>{
-            if(!acumm.includes(d.category)){
+            if(!acumm.includes(d.category)){ 
                 acumm.push(d.category)
             }
             return acumm
