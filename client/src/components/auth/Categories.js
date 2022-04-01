@@ -80,7 +80,7 @@ const Categories = ()=>{
               {filteredCategories.map((c) => (
                 <tr>
                   <td>{c.description}</td>
-                  <td>{c.price}</td>
+                  <td>${c.price}</td>
                   <td>{c.category}</td>
                 </tr>
               ))}
