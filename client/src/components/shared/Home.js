@@ -24,7 +24,7 @@ const Home = ()=>{
             <br/>
 
 
-            <Link to="/products"><Badge style={{color: 'white'}} ><h4>Products</h4></Badge></Link>
+            <Link to="/feed"><Badge style={{color: 'white'}} ><h4>Products</h4></Badge></Link>
           
         </div>
         </Card>
