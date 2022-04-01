@@ -24,27 +24,10 @@ desired_categories = [
   'Accessory',
 ]
 
-<<<<<<< HEAD
-s1 = Seller.create(name:'Art by Sarah', email:'Sarah@test.com' )
-s2 = Seller.create(name:'Party Products', email:'PartyProduct@test.com' )
-
-p1 = Product.create(price:700, description:'painting', category: 'artwork',seller_id:s1.id )
-p2 = Product.create(price:50, description:'prints', category: 'artwork',seller_id:s1.id )
-p3 = Product.create(price:10, description:'invitations', category: 'birthday',seller_id:s2.id )
-p3 = Product.create(price:15, description:'banners', category: 'birthday',seller_id:s2.id )
-p3 = Product.create(price:12, description:'balloons', category: 'birthday',seller_id:s2.id )
-p3 = Product.create(price:18, description:'table signs', category: 'wedding',seller_id:s2.id )
-
-num_desired_categories = 2
-
-Buyer.create(name:'Brenda', max_price:100, desired_categories:desired_categories.sample(num_desired_categories), seller_id:s1.id )
-Buyer.create(name:'Joe', max_price:100, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s1.id)
-Buyer.create(name:'Katherine', max_price:700, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s2.id)
-=======
-s1 = Seller.create(name:'Sarah', email:'Sarah@test.com' )
-s2 = Seller.create(name:'Bryan', email:'Bryan@test.com' )
-s3 = Seller.create(name:'Karl', email: 'Karl@test.com')
-s4 = Seller.create(name:'Anna', email: 'Anna@test.com')
+s1 = Seller.create(name:'Sarah', email:'ArtBySarah@test.com' )
+s2 = Seller.create(name:'Bryan', email:'PartyProducts@test.com' )
+s3 = Seller.create(name:'Karl', email: 'JewelryByKarl@test.com')
+s4 = Seller.create(name:'Anna', email: 'ClothingByAnna@test.com')
 
 
  Product.create(price:10000, description:'painting', category: 'artwork',seller_id:s1.id )
@@ -76,7 +59,6 @@ num_desired_categories = 2
 Buyer.create(name:'Brenda', max_price:1000, desired_categories:desired_categories.sample(num_desired_categories), seller_id:s1.id )
 Buyer.create(name:'Joe', max_price:10000, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s2.id)
 Buyer.create(name:'Katherine', max_price:7000, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s3.id)
->>>>>>> 3c390a40cadcb9119b30d03ec3b35242d5a14556
 
 
 
