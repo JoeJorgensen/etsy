@@ -16,15 +16,15 @@ const Home = ()=>{
     return (
         <Card>
         <div>
-            <h1>Welcome to Etsy! Login or Register to access more features!</h1>
+            <h1>Welcome to Etsy!</h1>
            
            
-            <Link to="/login"><Badge style={{color: 'white'}}><h4>Login</h4></Badge></Link>
+            <Link to="/categories"><Badge style={{color: 'white'}}><h4>Categories</h4></Badge></Link>
             <br/>
             <br/>
 
 
-            <Link to="/register"><Badge style={{color: 'white'}} ><h4>Register</h4></Badge></Link>
+            <Link to="/feed"><Badge style={{color: 'white'}} ><h4>Products</h4></Badge></Link>
           
         </div>
         </Card>

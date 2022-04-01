@@ -128,7 +128,7 @@ const NavBar = ()=>{
         <div>
              <Navbar sticky="top" variant="dark" bg="dark"  expand='lg'>
   <Container fluid>
-    <Navbar.Brand href="/feed">Etsy</Navbar.Brand>
+    <Navbar.Brand href="/">Etsy</Navbar.Brand>
 
         <NavDropdown 
           id="nav-dropdown-dark-example"

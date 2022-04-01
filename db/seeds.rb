@@ -24,10 +24,10 @@ desired_categories = [
   'Accessory',
 ]
 
-s1 = Seller.create(name:'Sarah', email:'Sarah@test.com' )
-s2 = Seller.create(name:'Bryan', email:'Bryan@test.com' )
-s3 = Seller.create(name:'Karl', email: 'Karl@test.com')
-s4 = Seller.create(name:'Anna', email: 'Anna@test.com')
+s1 = Seller.create(name:'Sarah', email:'ArtBySarah@test.com' )
+s2 = Seller.create(name:'Bryan', email:'PartyProducts@test.com' )
+s3 = Seller.create(name:'Karl', email: 'JewelryByKarl@test.com')
+s4 = Seller.create(name:'Anna', email: 'ClothingByAnna@test.com')
 
 
  Product.create(price:10000, description:'painting', category: 'artwork',seller_id:s1.id )
