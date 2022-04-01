@@ -45,13 +45,20 @@ const renderRows = (products) => {
 
 
       return (
+          <Card>
         <ListGroup.Item key ={seller.id}>
             <div >
-            <h1>{seller.name}</h1>
-            <p>Email: {seller.email}</p>
+            <Badge bg='dark' ><h1>{seller.name}</h1></Badge>
+            <br/>
+            <br/>
+
+            <Badge><h6>Email: {seller.email}</h6></Badge>
+            <br/>
+
             </div>
           <Table striped bordered hover>
             <thead>
+                <br/>
               <tr>
                 <th>Price</th>
                 <th>Description</th>
@@ -60,7 +67,7 @@ const renderRows = (products) => {
             </thead>
             <tbody>{renderRows(seller.products)}</tbody>
           </Table>
-        </ListGroup.Item>
+        </ListGroup.Item></Card>
       );
     });
   };
@@ -82,13 +89,8 @@ const getProducts = async()=>{
     }
 }
 return (
-<<<<<<< HEAD
     <Container style ={{textAlign:'center'}}>
       <Badge bg='dark' style={{margin:'20px'}}><h1 >Products</h1></Badge>
-=======
-    <Container>
-      <h1>Available Products</h1>
->>>>>>> c793dd824cbe36c35f5b3e28d978cc8a7c298048
       <ListGroup>{renderData()}</ListGroup>
     </Container>
   );
