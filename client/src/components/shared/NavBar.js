@@ -26,7 +26,7 @@ const NavBar = ()=>{
 
 
             {/* <Badge style={{color: 'white'}} >Feed</Badge> */}
-            <Badge><Link to ='/feed' style={{color: 'white'}}>Feed </Link></Badge>
+            <Badge><Link to ='/feed' style={{color: 'white'}}>Products </Link></Badge>
 
               </>  
               )
@@ -94,7 +94,6 @@ const NavBar = ()=>{
              <Navbar sticky="top" variant="dark" bg="dark"  expand='lg'>
   <Container fluid>
     <Navbar.Brand href="/">Etsy</Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbar-dark-example" />
 
         <NavDropdown 
           id="nav-dropdown-dark-example"
