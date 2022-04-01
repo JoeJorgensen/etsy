@@ -31,7 +31,7 @@ const renderRows = (products) => {
     return products.map((p) => {
       return (
         <tr key={p.id}>
-          <td>{p.price}</td>
+          <td>${p.price}</td>
           <td>{p.description}</td>
           <td>{p.category}</td>
         </tr>
@@ -82,8 +82,8 @@ const getProducts = async()=>{
     }
 }
 return (
-    <Container>
-      <h1>Products</h1>
+    <Container style ={{textAlign:'center'}}>
+      <Badge bg='dark' style={{margin:'20px'}}><h1 >Products</h1></Badge>
       <ListGroup>{renderData()}</ListGroup>
     </Container>
   );
