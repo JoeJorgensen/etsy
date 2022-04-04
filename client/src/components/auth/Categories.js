@@ -46,8 +46,14 @@ const Categories = ()=>{
           <Form.Select label='Select'  onChange={handleSelect} aria-label="Select Category" >
             <option value="" disabled hidden> Please Choose A Category... </option>
             {categories.map((category) => (
-              <option   value={category} key={category.id}>{category}</option>
-            ))}
+
+              <option   value={category} key={category}>{category}</option>
+
+            )
+            
+            )
+            }
+
           </Form.Select>
         );
       };
@@ -90,7 +96,7 @@ const Categories = ()=>{
       };
     
       return (
-          <Card>
+          <Card key={filteredCategories.id}>
         <div>
   <Badge bg='dark' style={{margin:'10px'}}><h1>Categories</h1></Badge>     
 
