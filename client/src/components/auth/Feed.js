@@ -45,14 +45,14 @@ const renderRows = (products) => {
 
 
       return (
-          <Card>
-        <ListGroup.Item key ={seller.id}    >
+          <Card key ={seller.id}>
+        <ListGroup.Item     >
             <div >
             <Badge bg='dark'><h1 style={{paddingTop:'5px'}}>{seller.name}</h1></Badge>
             <br/>
             <br/>
 
-            <Badge bg= 'info'  
+            <Badge bg= 'info' style={{margin: '15px'}} 
                    >
              <h6 style={{marginBottom:'0px'}}>{seller.email}</h6>
            </Badge>
@@ -60,9 +60,15 @@ const renderRows = (products) => {
 
             </div>
           <Table striped bordered hover>
+
             <thead>
-                <br/>
+
+              
+               
+
+
               <tr>
+                  
                 <th>Price</th>
                 <th>Description</th>
                 <th>Category</th>
