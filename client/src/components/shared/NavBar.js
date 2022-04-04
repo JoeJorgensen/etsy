@@ -71,7 +71,9 @@ const NavBar = ()=>{
           <>
   
   
-  
+          <div>
+
+          </div>
   
           {/* <Badge style={{color: 'white'}} href="/register">Register</Badge> */}
           {/* <Badge><Link to ='/register' style={{color: 'white'}}>Register </Link></Badge> */}
@@ -88,7 +90,8 @@ const NavBar = ()=>{
     if(auth.user){
       return  (
         <>
-  <Badge><Link to ='/findProducts' style={{color: 'white'}}> FindProducts </Link></Badge>
+
+  <Badge><Link to ='/findProducts' style={{color: 'white'}}> Find Products </Link></Badge>
 
 
 
@@ -115,6 +118,7 @@ const NavBar = ()=>{
 
       )
 }
+
     const renderLeftNav = ()=>{
 
       if(auth.user){
@@ -160,6 +164,7 @@ const NavBar = ()=>{
 
         <div>
              <Navbar sticky="top" variant="dark" bg="dark"  expand='lg'>
+
   <Container fluid>
     <Navbar.Brand href="/">
        <Badge bg='dark' >

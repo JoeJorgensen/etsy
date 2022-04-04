@@ -39,8 +39,7 @@ function App() {
           <Route path='/feed' element={<Feed/>}/>
           <Route path='/categories' element={<Categories/>}/>
           <Route path='/findProducts' element={<FindProducts/>}/>
-          
-
+            
        </Route>
 
 
