@@ -43,10 +43,10 @@ const Categories = ()=>{
 
     const renderSelect = (categories) => {
         return (
-          <Form.Select label='Select'  onChange={handleSelect} aria-label="Select Category">
-            <option value="" disabled selected hidden> Please Choose A Category... </option>
+          <Form.Select label='Select'  onChange={handleSelect} aria-label="Select Category" >
+            <option value="" disabled value hidden> Please Choose A Category... </option>
             {categories.map((category) => (
-              <option value={category}>{category}</option>
+              <option   value={category} key={category.id}>{category}</option>
             ))}
           </Form.Select>
         );
