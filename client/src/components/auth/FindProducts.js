@@ -3,7 +3,7 @@ import {useState} from 'react'
 const FindProducts = ()=>{
     return (
         <div>
-            <h1>FindProducts</h1>
+            <h1>Find Products</h1>
         </div>
     )
 
