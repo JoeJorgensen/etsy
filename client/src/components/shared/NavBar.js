@@ -184,8 +184,8 @@ const NavBar = ()=>{
           
           <NavDropdown.Item>{renderRightNav()}</NavDropdown.Item>
           <NavDropdown.Item>{renderCenterNav()}</NavDropdown.Item>
-          <NavDropdown.Item>{renderLeftNav()}</NavDropdown.Item>
           <NavDropdown.Item>{renderCenterNav2()}</NavDropdown.Item>
+          <NavDropdown.Item>{renderLeftNav()}</NavDropdown.Item>
 
           
 
