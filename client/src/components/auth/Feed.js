@@ -45,7 +45,7 @@ const renderRows = (products) => {
 
 
       return (
-          <Card>
+          <Card key = {seller.id}>
         <ListGroup.Item key ={seller.id}    >
             <div >
             <Badge bg='dark'><h1 style={{paddingTop:'5px'}}>{seller.name}</h1></Badge>
