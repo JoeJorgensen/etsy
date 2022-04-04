@@ -93,7 +93,7 @@ const getProducts = async()=>{
 }
 return (
     <Container style ={{textAlign:'center'}}>
-      <Badge bg='dark' style={{margin:'20px'}}><h1 >Products by Sellers:</h1></Badge>
+      <Badge bg='dark' style={{margin:'20px'}}><h1 >Products by Sellers</h1></Badge>
       <ListGroup>{renderData()}</ListGroup>
     </Container>
   );

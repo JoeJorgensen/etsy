@@ -10,6 +10,7 @@ import Container from 'react-bootstrap/Container'
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Button from "react-bootstrap/esm/Button";
+import Card from "../Card";
 
 
 
@@ -126,9 +127,13 @@ const NavBar = ()=>{
     return (
 
         <div>
-             <Navbar sticky="top" variant="dark" bg="dark"  expand='lg'>
+             <Navbar sticky="top" variant="dark" bg="dark"  expand='lg' itemsAlign='center'>
   <Container fluid>
-    <Navbar.Brand href="/">Etsy</Navbar.Brand>
+    <Navbar.Brand href="/">
+       <Badge bg='dark' >
+        <h3>Etsy</h3>
+       </Badge>
+      </Navbar.Brand>
 
         <NavDropdown 
           id="nav-dropdown-dark-example"

@@ -16,11 +16,16 @@ const Categories = ()=>{
 
 
     const getUniqueCategories = ()=>{ 
-        return products.reduce((acumm, d) =>{
-            if(!acumm.includes(d.category)){ 
-                acumm.push(d.category)
+        // this reduce is return the accumulator
+        // the 'd' is the start of the next value 
+        return products.reduce((accum, d) =>{
+            
+            if(!accum.includes(d.category)){
+
+                accum.push(d.category)
+
             }
-            return acumm
+            return accum
         },[])
     }
 
@@ -39,7 +44,7 @@ const Categories = ()=>{
     const renderSelect = (categories) => {
         return (
           <Form.Select label='Select'  onChange={handleSelect} aria-label="Select Category">
-            <option value="" disabled selected hidden>Please Choose...</option>
+            <option value="" disabled selected hidden> Please Choose A Category... </option>
             {categories.map((category) => (
               <option value={category}>{category}</option>
             ))}
@@ -57,10 +62,11 @@ const Categories = ()=>{
 
       const renderFilteredCategoryProducts = () => {
         if (!filteredCategories) {
-          return <p>No products, or select a category</p>;
+          return <p> No products, or select a category </p>;
         }
     
         return (
+
           <Table striped bordered hover>
             <thead>
               <tr>
@@ -74,7 +80,7 @@ const Categories = ()=>{
               {filteredCategories.map((c) => (
                 <tr>
                   <td>{c.description}</td>
-                  <td>{c.price}</td>
+                  <td>${c.price}</td>
                   <td>{c.category}</td>
                 </tr>
               ))}
