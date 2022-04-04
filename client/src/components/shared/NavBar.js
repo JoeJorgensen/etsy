@@ -71,7 +71,9 @@ const NavBar = ()=>{
           <>
   
   
-  
+          <div>
+
+          </div>
   
           {/* <Badge style={{color: 'white'}} href="/register">Register</Badge> */}
           {/* <Badge><Link to ='/register' style={{color: 'white'}}>Register </Link></Badge> */}
@@ -127,7 +129,7 @@ const NavBar = ()=>{
     return (
 
         <div>
-             <Navbar sticky="top" variant="dark" bg="dark"  expand='lg' itemsAlign='center'>
+             <Navbar sticky="top" variant="dark" bg="dark"  expand='lg' >
   <Container fluid>
     <Navbar.Brand href="/">
        <Badge bg='dark' >
