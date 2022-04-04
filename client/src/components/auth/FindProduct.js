@@ -1,6 +1,6 @@
 const FindProducts = ()=>{
   return(
-    <div><h1>finnnnnnnd products</h1></div>
+    <div><h1>FindProducts</h1></div>
   )
 }
 
