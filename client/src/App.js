@@ -17,6 +17,7 @@ import FetchUser from './components/auth/FetchUser';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import Feed from './components/auth/Feed';
 import Categories from './components/auth/Categories';
+import FindProducts from './components/auth/FindProducts';
 
 
 function App() {
@@ -31,11 +32,14 @@ function App() {
          <Route path='/login' element={<Login/>}/>
          <Route path='/register' element={<Register/>}/>
           <Route path='/' element={<Home/>}/>
+        
 
           {/* PROTECTED */}
         <Route element={<ProtectedRoute/>}>
           <Route path='/feed' element={<Feed/>}/>
           <Route path='/categories' element={<Categories/>}/>
+          <Route path='/findProducts' element={<FindProducts/>}/>
+          
 
        </Route>
 
