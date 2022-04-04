@@ -90,6 +90,7 @@ const NavBar = ()=>{
     if(auth.user){
       return  (
         <>
+
   <Badge><Link to ='/findProducts' style={{color: 'white'}}> Find Products </Link></Badge>
 
 
@@ -117,7 +118,6 @@ const NavBar = ()=>{
 
       )
 }
-
 
     const renderLeftNav = ()=>{
 
@@ -163,7 +163,8 @@ const NavBar = ()=>{
     return (
 
         <div>
-             <Navbar sticky="top" variant="dark" bg="dark"  expand='lg' >
+             <Navbar sticky="top" variant="dark" bg="dark"  expand='lg'>
+
   <Container fluid>
     <Navbar.Brand href="/">
        <Badge bg='dark' >

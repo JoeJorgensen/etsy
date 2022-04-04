@@ -32,14 +32,14 @@ function App() {
          <Route path='/login' element={<Login/>}/>
          <Route path='/register' element={<Register/>}/>
           <Route path='/' element={<Home/>}/>
+        
 
           {/* PROTECTED */}
         <Route element={<ProtectedRoute/>}>
           <Route path='/feed' element={<Feed/>}/>
           <Route path='/categories' element={<Categories/>}/>
           <Route path='/findProducts' element={<FindProducts/>}/>
-
-
+            
        </Route>
 
 
