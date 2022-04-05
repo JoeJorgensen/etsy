@@ -118,7 +118,39 @@ const NavBar = ()=>{
 
       )
 }
+const renderCenterNav3 = ()=>{
 
+  if(auth.user){
+    return  (
+      <>
+
+<Badge><Link to ='/charts' style={{color: 'white'}}> Charts </Link></Badge>
+
+
+
+
+
+
+
+        </>  
+        )
+     }
+    return (
+      <>
+
+
+
+
+      {/* <Badge style={{color: 'white'}} href="/register">Register</Badge> */}
+      {/* <Badge><Link to ='/register' style={{color: 'white'}}>Register </Link></Badge> */}
+
+
+    
+                  
+       </>
+
+    )
+}
     const renderLeftNav = ()=>{
 
       if(auth.user){
@@ -186,6 +218,7 @@ const NavBar = ()=>{
           <NavDropdown.Item>{renderRightNav()}</NavDropdown.Item>
           <NavDropdown.Item>{renderCenterNav()}</NavDropdown.Item>
           <NavDropdown.Item>{renderCenterNav2()}</NavDropdown.Item>
+          <NavDropdown.Item>{renderCenterNav3()}</NavDropdown.Item>
           <NavDropdown.Item>{renderLeftNav()}</NavDropdown.Item>
 
           

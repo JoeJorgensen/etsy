@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     get '/sellers/:id', to:'sellers#show'
 
     get '/buyers/:id', to:'buyers#show'
+
+    get 'category_cost', to:'products#category_cost'
   end
 
 end
