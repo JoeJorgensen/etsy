@@ -24,10 +24,10 @@ desired_categories = [
   'Accessory',
 ]
 
-s1 = Seller.create(name:'Sarah', email:'ArtBySarah@test.com' )
-s2 = Seller.create(name:'Bryan', email:'PartyProducts@test.com' )
-s3 = Seller.create(name:'Karl', email: 'JewelryByKarl@test.com')
-s4 = Seller.create(name:'Anna', email: 'ClothingByAnna@test.com')
+s1 = Seller.create(name:'Art by Sarah', email:'ArtBySarah@test.com' )
+s2 = Seller.create(name:'Party Products by Bryan', email:'PartyProducts@test.com' )
+s3 = Seller.create(name:'Jewelry by Karl', email: 'JewelryByKarl@test.com')
+s4 = Seller.create(name:'Clothing by Anna', email: 'ClothingByAnna@test.com')
 
 
  Product.create(price:10000, description:'Painting', category: 'Artwork',seller_id:s1.id )
@@ -57,5 +57,10 @@ s4 = Seller.create(name:'Anna', email: 'ClothingByAnna@test.com')
 num_desired_categories = 2
 
 Buyer.create(name:'Brenda', max_price:1000, desired_categories:desired_categories.sample(num_desired_categories), seller_id:s1.id )
-Buyer.create(name:'Joe', max_price:10000, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s2.id)
-Buyer.create(name:'Katherine', max_price:7000, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s3.id)
+Buyer.create(name:'Brandon', max_price:100, desired_categories:desired_categories.sample(num_desired_categories), seller_id:s1.id )
+Buyer.create(name:'Joe', max_price:500, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s2.id)
+Buyer.create(name:'Jasmin', max_price:10000, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s2.id)
+Buyer.create(name:'Katherine', max_price:500, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s3.id)
+Buyer.create(name:'Ashley', max_price:50, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s3.id)
+Buyer.create(name:'James', max_price:100, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s4.id)
+Buyer.create(name:'Alex', max_price:60, desired_categories: desired_categories.sample(num_desired_categories), seller_id:s4.id)

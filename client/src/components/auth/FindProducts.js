@@ -57,7 +57,7 @@ const FindProducts = ()=>{
     const renderBuyerSelect = () => {
       return (
         <Form.Select label='Select'  onChange={getProducts} aria-label="Select Buyer">
-          <option value="" disabled selected hidden>Please Choose...</option>
+          <option value="" disabled selected hidden>Please Choose a Buyer...</option>
           {buyers.map((buyer) => (
             <option value={buyer.id}>{buyer.name}</option>
           ))}
@@ -67,7 +67,7 @@ const FindProducts = ()=>{
   
     const renderProducts = ()=>{
       if(!products){
-        return <p>products undefined this mean you haven't select a buyer</p>
+        return <p>products undefined this means you haven't select a buyer</p>
       }
       if(products.length === 0){
         return <p>no products match desired category and price range for selected buyer</p>
