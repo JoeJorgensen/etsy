@@ -12,7 +12,7 @@ class Buyer < ApplicationRecord
 
 
 def self.my_products(id, desired_categories)
-  select('buyers.name, max_price, desired_categories, s.email, s.name, buyers.seller_id, price, description')
+  select('buyers.name, max_price, desired_categories, s.email, s.name, buyers.seller_id, price, description, category')
   .joins("INNER JOIN sellers AS s ON s.id = buyers.seller_id
    INNER JOIN products AS p ON p.seller_id = buyers.seller_id AND p.price < buyers.max_price ")
   .where("buyers.id = ?", id)

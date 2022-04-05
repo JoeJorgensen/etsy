@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react'
-import { Form } from 'react-bootstrap';
+import { Form, Table } from 'react-bootstrap';
 
 const FindProducts = ()=>{
 
@@ -71,15 +71,30 @@ const FindProducts = ()=>{
       }
       if(products.length === 0){
         return <p>no products match desired category and price range for selected buyer</p>
-      }
+      }  console.log(products)
       return products.map((p)=>{
+      
         return(
-          <div key={p.id} style={{border:'1px solid', margin:'10px'}}>
-            <p>Price: ${p.price}</p>
-            <p>Description: {p.description}</p>
+          <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Category</th>
+            
+            </tr>
+          </thead>
+          <tbody>
           
-          </div>
-        )
+              <tr key={p.id}>
+                <td>{p.description}</td>
+                <td>${p.price}</td>
+                <td>{p.category}</td>
+              </tr>
+         
+          </tbody>
+        </Table>
+           )
       })
     }
 
@@ -88,10 +103,10 @@ const FindProducts = ()=>{
             <h1>Find Products</h1>
             {sellers && renderSellerSelect()}
             {buyers && renderBuyerSelect()}
-            {renderProducts()}
-            {JSON.stringify(sellers)}
+            {products && renderProducts()}
+            {/* {JSON.stringify(sellers)}
             {JSON.stringify(buyers)}
-           {JSON.stringify(products)} 
+           {JSON.stringify(products)}  */}
 
         </div>
     )
