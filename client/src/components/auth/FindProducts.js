@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react'
 import { Form, Table } from 'react-bootstrap';
+import Card from '../Card';
 
 const FindProducts = ()=>{
 
@@ -73,20 +74,21 @@ const FindProducts = ()=>{
         return <p>no products match desired category and price range for selected buyer</p>
       }  console.log(products)
       return products.map((p)=>{
-      
+
         return(
-          <Table striped bordered hover>
-          <thead>
+          <Card key={p.id}>
+          <Table  striped bordered hover >
+          <thead >
             <tr>
               <th>Description</th>
               <th>Price</th>
               <th>Category</th>
             
             </tr>
-          </thead>
-          <tbody>
+          </thead >
+          <tbody >
           
-              <tr key={p.id}>
+              <tr >
                 <td>{p.description}</td>
                 <td>${p.price}</td>
                 <td>{p.category}</td>
@@ -94,6 +96,7 @@ const FindProducts = ()=>{
          
           </tbody>
         </Table>
+        </Card>
            )
       })
     }
@@ -103,7 +106,7 @@ const FindProducts = ()=>{
             <h1>Find Products</h1>
             {sellers && renderSellerSelect()}
             {buyers && renderBuyerSelect()}
-            {products && renderProducts()}
+            {renderProducts()}
             {/* {JSON.stringify(sellers)}
             {JSON.stringify(buyers)}
            {JSON.stringify(products)}  */}

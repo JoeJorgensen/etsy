@@ -6,7 +6,14 @@ class Product < ApplicationRecord
     .from('products')
     .joins('INNER JOIN sellers AS s 
     ON products.seller_id = s.id')
-    
+  end
+
+
+    def self.category_cost
+      select("DISTINCT category, STRING_AGG(CAST(price AS VARCHAR), ',') as prices, 
+      COUNT(*) price_count" )
+     .group(' category')
+
     end
 end
 

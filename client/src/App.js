@@ -18,6 +18,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute';
 import Feed from './components/auth/Feed';
 import Categories from './components/auth/Categories';
 import FindProducts from './components/auth/FindProducts';
+import Charts from './components/auth/Charts';
 
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
           <Route path='/feed' element={<Feed/>}/>
           <Route path='/categories' element={<Categories/>}/>
           <Route path='/findProducts' element={<FindProducts/>}/>
+          <Route path='/charts' element={<Charts/>}/>
+
+
             
        </Route>
 
