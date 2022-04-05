@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 import {useState, useEffect} from 'react'
 import { Form } from 'react-bootstrap';
 
@@ -23,7 +22,8 @@ const FindProducts = ()=>{
       }
     }
   
-    const getBuyers = async(id)=>{
+    const getBuyers = async(e)=>{
+      let id = e.target.value
       try{
         let res = await axios.get(`/api/sellers/${id}`)
         setBuyers(res.data)
@@ -32,7 +32,8 @@ const FindProducts = ()=>{
       }
     }
   
-    const getProducts = async(id)=>{
+    const getProducts = async(e)=>{
+      let id = e.target.value
       try{
         let res = await axios.get(`/api/buyers/${id}`)
         setProducts(res.data)
@@ -53,11 +54,41 @@ const FindProducts = ()=>{
       );
     };
 
+    const renderBuyerSelect = () => {
+      return (
+        <Form.Select label='Select'  onChange={getProducts} aria-label="Select Buyer">
+          <option value="" disabled selected hidden>Please Choose...</option>
+          {buyers.map((buyer) => (
+            <option value={buyer.id}>{buyer.name}</option>
+          ))}
+        </Form.Select>
+      );
+    };
+  
+    const renderProducts = ()=>{
+      if(!products){
+        return <p>products undefined this mean you haven't select a buyer</p>
+      }
+      if(products.length === 0){
+        return <p>no products match desired category and price range for selected buyer</p>
+      }
+      return products.map((p)=>{
+        return(
+          <div key={p.id} style={{border:'1px solid', margin:'10px'}}>
+            <p>Price: ${p.price}</p>
+            <p>Description: {p.description}</p>
+          
+          </div>
+        )
+      })
+    }
 
     return (
         <div>
             <h1>Find Products</h1>
             {sellers && renderSellerSelect()}
+            {buyers && renderBuyerSelect()}
+            {renderProducts()}
             {JSON.stringify(sellers)}
             {JSON.stringify(buyers)}
            {JSON.stringify(products)} 
