@@ -7,6 +7,10 @@ Rails.application.routes.draw do
     resources :products
     # get '/products', to: 'products#index'
     resources :buyers
+
+    get '/sellers/:id', to:'sellers#show'
+
+    get '/buyers/:id', to:'buyers#show'
   end
 
 end
