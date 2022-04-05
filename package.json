@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "axios-hooks": "^3.0.1"
+    "axios-hooks": "^3.0.1",
+    "react-vis": "^1.11.7"
   }
 }
